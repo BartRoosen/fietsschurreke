@@ -27,7 +27,7 @@ include 'auto_load.php';
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-6">
                         &#48;&#52;&#57;&#55;/&#48;6.4&#55;.0&#51;<br>
-                        fietsshurreke&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;<br>
+                        fietsschurreke&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;<br>
                         www.fietsschurreke.be<br>
                     </div>
                 </div>
