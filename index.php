@@ -11,8 +11,8 @@ include 'auto_load.php';
 <body>
     <div class="top"></div>
     <div class="row">
-        <div class="col-xs-12 col-md-4 col-lg-4"></div>
-        <div class="col-xs-12 col-md-4 col-lg-4">
+        <div class="col-xs-12 col-md-12 col-lg-12 col-xl-4"></div>
+        <div class="col-xs-12 col-md-12 col-lg-12 col-xl-4">
             <div class="logo"></div>
             <div class="alert alert-success text-center">
                 <i class="fa fa-cog fa-spin fa-4x" aria-hidden="true"></i><br>
@@ -33,7 +33,7 @@ include 'auto_load.php';
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-md-4 col-lg-4"></div>
+        <div class="col-xs-12 col-md-12 col-lg-12 col-xl-4"></div>
     </div>
 </body>
 </html>
