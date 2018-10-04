@@ -1,0 +1,26 @@
+body {
+    overflow-x : hidden;
+}
+
+.logo {
+    background-image    : url("../img/logo.PNG");
+    width               : 100%;
+    background-position : center;
+    background-size     : cover;
+    height              : 45em;
+    background-repeat   : no-repeat;
+}
+
+.images {
+    width : 100%;
+}
+
+.top {
+    height   : 5em;
+    width    : 100%;
+    overflow : hidden;
+}
+
+.well {
+    font-size : 2em;
+}
