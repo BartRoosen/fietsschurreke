@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-<?php include 'head.php'; ?>
+<?php include 'shared/head.php'; ?>
 <body>
 
-<?php include 'banner.php'; ?>
-<?php include 'menu.php'; ?>
+<?php include 'shared/banner.php'; ?>
+<?php include 'shared/menu.php'; ?>
 
 <div class="top"></div>
-<div class="row">
-    <div class="col-xs-12 col-md-12 col-lg-12 col-xl-4">
-        <?php include 'contact-picture.php'; ?>
-    </div>
-    <div class="col-xs-12 col-md-12 col-lg-12 col-xl-4">
-        <?php include 'contact.php'; ?>
-    </div>
-    <div class="col-xs-12 col-md-12 col-lg-12 col-xl-4">
-        <?php include 'open.php'; ?>
-    </div>
-</div>
+<?php include $pagePath; ?>
+
 <?= $jsHtml; ?>
+<script>
+    $(document).ready(function () {
+        $("#cssmenu li").each(function() {
+            $(this).removeClass('active');
+        });
+        $('#<?= $page ?>').addClass('active');
+    });
+</script>
 </body>
 </html>

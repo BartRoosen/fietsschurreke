@@ -2,6 +2,8 @@
 
 namespace Classes\Loaders;
 
+use Classes\Config\LoaderConfig;
+
 /**
  * Class CssLoader
  *
@@ -14,8 +16,8 @@ class CssLoader extends AbstractLoader
      */
     public function __construct()
     {
-        $this->htmlTemplate = '<link rel="stylesheet" href="%s/%s">';
-        $this->folder       = 'css';
+        $this->htmlTemplate = LoaderConfig::$CSS_TEMPLATE;
+        $this->folder       = LoaderConfig::$CSS_FOLDER;
 
         parent::__construct();
     }

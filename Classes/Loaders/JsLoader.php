@@ -2,6 +2,8 @@
 
 namespace Classes\Loaders;
 
+use Classes\Config\LoaderConfig;
+
 /**
  * Class JsLoader
  *
@@ -10,12 +12,12 @@ namespace Classes\Loaders;
 class JsLoader extends AbstractLoader
 {
     /**
-     * CssLoader constructor.
+     * JsLoader constructor.
      */
     public function __construct()
     {
-        $this->htmlTemplate = '<script src="%s/%s"></script>';
-        $this->folder       = 'js';
+        $this->htmlTemplate = LoaderConfig::$JS_TEMPLATE;
+        $this->folder       = LoaderConfig::$JS_FOLDER;
 
         parent::__construct();
     }

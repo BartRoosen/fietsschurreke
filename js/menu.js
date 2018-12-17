@@ -102,12 +102,12 @@ $(document).ready(function() {
     format: "dropdown"
   });
 
-    $("#cssmenu li").on('click', function () {
-        $("#cssmenu li").each(function() {
-          $(this).removeClass('active');
-        });
-        $(this).addClass('active');
-    });
+    // $("#cssmenu li").on('click', function () {
+    //     $("#cssmenu li").each(function() {
+    //       $(this).removeClass('active');
+    //     });
+    //     // $(this).addClass('active');
+    // });
 
   $("#cssmenu a").each(function() {
   	var linkTitle = $(this).text();
