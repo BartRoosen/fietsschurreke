@@ -7,9 +7,13 @@ body {
     font-size : 1.5em;
 }
 
+.page-content {
+    padding : 0 5% 0 5%;
+}
+
 .opening-hours-container,
 .contact {
-    padding  : 0 10% 0 10%;
+    /*padding  : 0 10% 0 10%;*/
 }
 
 .contact-picture {
@@ -47,9 +51,37 @@ body {
     font-size : 2em;
 }
 
-.banner {
+.banner-home {
+    background-image : url("../img/gear.jpg");
+}
+
+.banner-men {
+    background-image : url("../img/men.jpg");
+}
+
+.banner-woman {
+    background-image : url("../img/woman.jpg");
+}
+
+.banner-kids {
+    background-image : url("../img/kids.jpg");
+}
+
+.banner-contact {
+    background-image : url("../img/contact.jpg");
+}
+
+.banner-ebike {
+    background-image : url("../img/ebike.jpg");
+}
+
+.banner-home,
+.banner-men,
+.banner-woman,
+.banner-kids,
+.banner-contact,
+.banner-ebike {
     width               : 100%;
-    background-image    : url("../img/gear.jpg");
     background-position : center;
     background-size     : cover;
     height              : 300px;

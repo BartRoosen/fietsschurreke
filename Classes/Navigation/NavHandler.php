@@ -6,8 +6,9 @@ use Classes\Entities\Session;
 
 class NavHandler
 {
-    const PATH         = 'components/%s/index.php';
-    const DEFAULT_PAGE = 'home';
+    const PATH            = 'components/%s/index.php';
+    const DEFAULT_PAGE    = 'home';
+    const DEFAULT_PICTURE = 'banner-home';
 
     /**
      *
@@ -30,11 +31,34 @@ class NavHandler
             $session->setPage(self::DEFAULT_PAGE);
         }
 
-        $_SESSION['page'] = $session->getPage();
+        if (null === $session->getPicture()) {
+            $session->setPicture(self::DEFAULT_PICTURE);
+        }
+
+        $_SESSION['page']    = $session->getPage();
+        $_SESSION['picture'] = $session->getPicture();
     }
 
     /**
-     * @return mixed
+     * @return Session
+     */
+    public function getSession()
+    {
+        $this->connect();
+
+        $session = new Session();
+
+        $sessionPage    = isset($_SESSION['page']) ? $_SESSION['page'] : self::DEFAULT_PAGE;
+        $sessionPicture = isset($_SESSION['picture']) ? $_SESSION['picture'] : self::DEFAULT_PICTURE;
+
+        $session->setPage($sessionPage);
+        $session->setPicture($sessionPicture);
+
+        return $session;
+    }
+
+    /**
+     * @return string
      */
     public function getPagePath()
     {
@@ -48,6 +72,9 @@ class NavHandler
         return sprintf(self::PATH, $_SESSION['page']);
     }
 
+    /**
+     * @return string
+     */
     public function getPage()
     {
         $this->connect();
@@ -60,4 +87,3 @@ class NavHandler
         return $_SESSION['page'];
     }
 }
-

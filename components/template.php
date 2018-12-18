@@ -7,7 +7,7 @@
 <?php include 'shared/menu.php'; ?>
 
 <div class="top"></div>
-<?php include $pagePath; ?>
+<?php include 'components/'. $page .'/index.php'; ?>
 
 <?= $jsHtml; ?>
 <script>
@@ -16,6 +16,11 @@
             $(this).removeClass('active');
         });
         $('#<?= $page ?>').addClass('active');
+
+        var banner = $('#banner');
+
+        banner.removeAttr('class');
+        banner.addClass('<?= $picture ?>');
     });
 </script>
 </body>

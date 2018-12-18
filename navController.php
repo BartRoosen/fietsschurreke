@@ -12,6 +12,10 @@ if (isset($_GET, $_GET['page'])) {
     $session->setPage($_GET['page']);
 }
 
+if (isset($_GET, $_GET['picture'])) {
+    $session->setPicture($_GET['picture']);
+}
+
 $handler->setSession($session);
 
 header('location: ./');

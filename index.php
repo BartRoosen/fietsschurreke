@@ -13,12 +13,14 @@ $cssLoader = new CssLoader();
 $jsLoader  = new JsLoader();
 $open      = new OpeningRepository();
 $nav       = new NavHandler();
+$session   = $nav->getSession();
 
 $cssHtml      = $cssLoader->getHtml();
 $jsHtml       = $jsLoader->getHtml();
 $openingHours = $open->getOpeningHours();
 
 $pagePath = $nav->getPagePath();
-$page     = $nav->getPage();
+$page     = $session->getPage();
+$picture  = $session->getPicture();
 
 include 'components/template.php';

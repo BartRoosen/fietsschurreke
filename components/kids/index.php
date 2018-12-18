@@ -1,3 +1,3 @@
 <div class="page-content">
-    <h1>home</h1>
+    <h1>kinderfietsen</h1>
 </div>
