@@ -4,8 +4,8 @@
             data-picture="banner-home">
             <a href='navController.php?page=home&picture=banner-home'>Home</a>
         </li>
-        <li>
-            <a href='navController.php?page=home&picture=banner-home'>projecten</a>
+        <li id="projects">
+            <a href='navController.php?page=projects&picture=banner-projects'>projecten</a>
         </li>
         <li id="men"
             data-picture="banner-men">

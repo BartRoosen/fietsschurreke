@@ -10,6 +10,11 @@ class Bike
     private $id;
 
     /**
+     * @var float
+     */
+    private $price;
+
+    /**
      * @var bool
      */
     private $sold;
@@ -40,6 +45,11 @@ class Bike
     private $sizeFrame;
 
     /**
+     * @var string
+     */
+    private $pictureLink;
+
+    /**
      * @return int
      */
     public function getId()
@@ -53,6 +63,22 @@ class Bike
     public function setId($id)
     {
         $this->id = $id;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param float $price
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
     }
 
     /**
@@ -149,5 +175,21 @@ class Bike
     public function setSizeFrame($sizeFrame)
     {
         $this->sizeFrame = $sizeFrame;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPictureLink()
+    {
+        return $this->pictureLink;
+    }
+
+    /**
+     * @param string $pictureLink
+     */
+    public function setPictureLink($pictureLink)
+    {
+        $this->pictureLink = $pictureLink;
     }
 }

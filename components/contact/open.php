@@ -9,7 +9,7 @@ use Classes\Entities\Opening;
             if ($open instanceof Opening) {
                 ?>
                 <tr>
-                    <td class="text-right"><?= strtoupper($open->getDay()); ?></td>
+                    <td class="text-left"><?= strtoupper($open->getDay()); ?></td>
                     <?php
                     if ($open->isClosed()) {
                         ?>

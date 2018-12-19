@@ -1,3 +1,3 @@
 <div class="page-content">
-    <?= $bikeInfo ?>
+    <h1>Projecten</h1>
 </div>

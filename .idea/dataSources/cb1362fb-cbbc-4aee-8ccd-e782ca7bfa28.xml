@@ -1065,240 +1065,247 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="249" name="FL_SOLD">
+    <column id="267" parent="249" name="QY_PRICE">
       <Position>2</Position>
+      <DataType>decimal(6,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0.00&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="268" parent="249" name="FL_SOLD">
+      <Position>3</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="249" name="DT_SOLD">
-      <Position>3</Position>
+    <column id="269" parent="249" name="DT_SOLD">
+      <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="249" name="AI_GENDER">
-      <Position>4</Position>
-      <DataType>int(6)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="270" parent="249" name="AI_TYPE">
+    <column id="270" parent="249" name="AI_GENDER">
       <Position>5</Position>
       <DataType>int(6)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="249" name="AI_SIZE_WHEEL">
+    <column id="271" parent="249" name="AI_TYPE">
       <Position>6</Position>
       <DataType>int(6)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="249" name="AI_SIZE_FRAME">
+    <column id="272" parent="249" name="AI_SIZE_WHEEL">
       <Position>7</Position>
       <DataType>int(6)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="249" name="DT_CREATED">
+    <column id="273" parent="249" name="AI_SIZE_FRAME">
       <Position>8</Position>
+      <DataType>int(6)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="274" parent="249" name="DT_CREATED">
+      <Position>9</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="274" parent="249" name="DT_MODIFIED">
-      <Position>9</Position>
+    <column id="275" parent="249" name="DT_MODIFIED">
+      <Position>10</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="249" name="FL_DELETED">
-      <Position>10</Position>
+    <column id="276" parent="249" name="FL_DELETED">
+      <Position>11</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="276" parent="249" name="PRIMARY">
+    <key id="277" parent="249" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>AI_BIKE</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="277" parent="250" name="AI_OPEN">
+    <column id="278" parent="250" name="AI_OPEN">
       <Position>1</Position>
       <DataType>int(6)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="250" name="DE_DAY">
+    <column id="279" parent="250" name="DE_DAY">
       <Position>2</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="250" name="TM_FROM">
+    <column id="280" parent="250" name="TM_FROM">
       <Position>3</Position>
       <DataType>time|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="250" name="TM_UNTIL">
+    <column id="281" parent="250" name="TM_UNTIL">
       <Position>4</Position>
       <DataType>time|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="250" name="FL_CLOSED">
+    <column id="282" parent="250" name="FL_CLOSED">
       <Position>5</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="250" name="FL_DISPLAY">
+    <column id="283" parent="250" name="FL_DISPLAY">
       <Position>6</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="250" name="DT_CREATED">
+    <column id="284" parent="250" name="DT_CREATED">
       <Position>7</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="250" name="DT_MODIFIED">
+    <column id="285" parent="250" name="DT_MODIFIED">
       <Position>8</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="250" name="FL_DELETED">
+    <column id="286" parent="250" name="FL_DELETED">
       <Position>9</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="286" parent="250" name="PRIMARY">
+    <key id="287" parent="250" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>AI_OPEN</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="287" parent="251" name="AI_PICTURE">
+    <column id="288" parent="251" name="AI_PICTURE">
       <Position>1</Position>
       <DataType>int(6)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="251" name="AI_BIKE">
+    <column id="289" parent="251" name="AI_BIKE">
       <Position>2</Position>
       <DataType>int(6)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="251" name="UL_PICTURE">
+    <column id="290" parent="251" name="UL_PICTURE">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="251" name="FL_COVER">
+    <column id="291" parent="251" name="FL_COVER">
       <Position>4</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="251" name="DT_CREATED">
+    <column id="292" parent="251" name="DT_CREATED">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="251" name="DT_MODIFIED">
+    <column id="293" parent="251" name="DT_MODIFIED">
       <Position>6</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="251" name="FL_DELETED">
+    <column id="294" parent="251" name="FL_DELETED">
       <Position>7</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="294" parent="251" name="PRIMARY">
+    <key id="295" parent="251" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>AI_PICTURE</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="295" parent="252" name="AI_SIZE_FRAME">
+    <column id="296" parent="252" name="AI_SIZE_FRAME">
       <Position>1</Position>
       <DataType>int(6)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="296" parent="252" name="CD_SIZE_FRAME">
+    <column id="297" parent="252" name="CD_SIZE_FRAME">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="252" name="DT_CREATED">
+    <column id="298" parent="252" name="DT_CREATED">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="252" name="DT_MODIFIED">
+    <column id="299" parent="252" name="DT_MODIFIED">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="252" name="FL_DELETED">
+    <column id="300" parent="252" name="FL_DELETED">
       <Position>5</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="300" parent="252" name="PRIMARY">
+    <key id="301" parent="252" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>AI_SIZE_FRAME</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="301" parent="253" name="AI_SIZE_WHEEL">
+    <column id="302" parent="253" name="AI_SIZE_WHEEL">
       <Position>1</Position>
       <DataType>int(6)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="253" name="CD_SIZE_WHEEL">
+    <column id="303" parent="253" name="CD_SIZE_WHEEL">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="253" name="DT_CREATED">
+    <column id="304" parent="253" name="DT_CREATED">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="253" name="DT_MODIFIED">
+    <column id="305" parent="253" name="DT_MODIFIED">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="305" parent="253" name="FL_DELETED">
+    <column id="306" parent="253" name="FL_DELETED">
       <Position>5</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;0&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="306" parent="253" name="PRIMARY">
+    <key id="307" parent="253" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>AI_SIZE_WHEEL</ColNames>
       <Primary>1</Primary>

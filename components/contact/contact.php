@@ -9,9 +9,4 @@
         www.fietsschurreke.be<br>
     </div>
     <div class="top"></div>
-    <div class="bigger-text">
-        <div class="alert alert-success text-center">
-            Wilt u een afspraak maken? Doe dit dan best telefonisch!
-        </div>
-    </div>
 </div>

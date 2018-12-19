@@ -7,8 +7,9 @@ body {
     font-size : 1.5em;
 }
 
+/* @todo: add responsive options !!! */
 .page-content {
-    padding : 0 5% 0 5%;
+    padding : 0 20% 0 20%;
 }
 
 .opening-hours-container,
@@ -21,7 +22,7 @@ body {
 }
 
 .bigger-text {
-    font-size : 1.5em;
+    font-size : 1.2em;
 }
 
 .logo {
@@ -52,27 +53,31 @@ body {
 }
 
 .banner-home {
-    background-image : url("../img/gear.jpg");
+    background-image : url("../img/banner/gear.jpg");
 }
 
 .banner-men {
-    background-image : url("../img/men.jpg");
+    background-image : url("../img/banner/men.jpg");
 }
 
 .banner-woman {
-    background-image : url("../img/woman.jpg");
+    background-image : url("../img/banner/woman.jpg");
 }
 
 .banner-kids {
-    background-image : url("../img/kids.jpg");
+    background-image : url("../img/banner/kids.jpg");
 }
 
 .banner-contact {
-    background-image : url("../img/contact.jpg");
+    background-image : url("../img/banner/contact.jpg");
 }
 
 .banner-ebike {
-    background-image : url("../img/ebike.jpg");
+    background-image : url("../img/banner/ebike.jpg");
+}
+
+.banner-projects {
+    background-image : url("../img/banner/projects.jpg");
 }
 
 .banner-home,
@@ -80,7 +85,8 @@ body {
 .banner-woman,
 .banner-kids,
 .banner-contact,
-.banner-ebike {
+.banner-ebike,
+.banner-projects {
     width               : 100%;
     background-position : center;
     background-size     : cover;
