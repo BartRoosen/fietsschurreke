@@ -3,14 +3,22 @@ body {
     color      : rgb(28, 35, 66);
 }
 
+hr {
+    border : 1px solid rgb(28, 35, 66);
+}
+
 .opening-hours-table {
     font-size : 1.5em;
 }
 
-/* @todo: add responsive options !!! */
-
 .page-content {
     width : 100%;
+}
+
+.page-content:after {
+    content : '';
+    display : table;
+    clear   : both
 }
 
 .opening-hours-container,
@@ -54,7 +62,7 @@ body {
 }
 
 .banner-home {
-    background-image : url("../img/banner/gear.jpg");
+    background-image : url("../img/banner/eindwerk.jpeg");
 }
 
 .banner-men {

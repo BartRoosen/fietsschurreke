@@ -1,0 +1,70 @@
+@media screen and (min-width : 1025px) {
+    .home-content {
+        padding : 0 20% 0 20%;
+    }
+
+    .call-koen-button {
+        display : none;
+    }
+}
+
+@media screen and (min-width : 769px) and (max-device-width : 1024px) {
+    .home-content {
+        padding : 0 10% 0 10%;
+    }
+
+    .call-koen-button {
+        display : none;
+    }
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 768px) {
+    .home-content {
+        padding : 0 10% 0 10%;
+    }
+
+    .call-koen-button {
+        display : none;
+    }
+}
+
+@media screen and (max-device-width : 480px) {
+    .home-content {
+        padding : 0 5% 0 5%;
+    }
+
+    .call-koen-button {
+        font-size  : 2em;
+        background : rgb(30, 64, 97);
+        color      : white;
+        width      : 100%;
+        text-align : center;
+    }
+}
+
+.call-koen-button {
+    font-size  : 2em;
+    background : rgb(30, 64, 97);
+    color      : white;
+}
+
+.home-content {
+    font-size : 1.2em;
+}
+
+.welcome {
+    font-size  : 3em;
+    text-align : center;
+    padding    : 1em 0 1.5em 0;
+}
+
+.bottom-filler {
+    height : 2em;
+}
+.bottom-banner {
+    text-align : center;
+    bottom     : 0;
+    width      : 100%;
+    padding    : 1em 0 1em 0;
+    font-size: 1.2em;
+}
