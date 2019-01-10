@@ -55,6 +55,11 @@ class Bike
     private $createDate;
 
     /**
+     * @var string
+     */
+    private $brandName;
+
+    /**
      * @return int
      */
     public function getId()
@@ -212,5 +217,21 @@ class Bike
     public function setCreateDate($createDate)
     {
         $this->createDate = $createDate;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBrandName()
+    {
+        return $this->brandName;
+    }
+
+    /**
+     * @param string $brandName
+     */
+    public function setBrandName($brandName)
+    {
+        $this->brandName = $brandName;
     }
 }

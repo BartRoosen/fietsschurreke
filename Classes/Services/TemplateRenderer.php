@@ -114,6 +114,7 @@ class TemplateRenderer
                     $bikeInfoSubClass,
                     $sold,
                     $pictureLink,
+                    $bike->getBrandName(),
                     $bike->getType(),
                     $bike->getSizeFrame(),
                     $bike->getSizeWheel(),

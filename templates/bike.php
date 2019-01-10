@@ -8,6 +8,10 @@
     <div class="bike-info-table">
         <table class="table">
             <tr>
+                <td>Merk</td>
+                <td><strong>%s</strong></td>
+            </tr>
+            <tr>
                 <td>Type</td>
                 <td>%s</td>
             </tr>
@@ -21,7 +25,7 @@
             </tr>
             <tr>
                 <td>Prijs</td>
-                <td>%s</td>
+                <td><strong>%s</strong></td>
             </tr>
         </table>
     </div>

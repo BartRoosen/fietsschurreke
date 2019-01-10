@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e4b2fd-64c2-4658-9837-f694769515ad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cb1362fb-cbbc-4aee-8ccd-e782ca7bfa28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cb1362fb-cbbc-4aee-8ccd-e782ca7bfa28.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Entities/Bike.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Entities/Bike.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Entities/BikeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Entities/BikeRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Services/TemplateRenderer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Services/TemplateRenderer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/kids/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/kids/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/men/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/men/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/woman/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/woman/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bikeInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bikeInfo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bikes/kcb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bikes/kmb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bikes/25/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bikes/25/1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/bike.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bike.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,106 +61,35 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="bike.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/bike.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="21" selection-start-column="12" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="filter.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/components/shared/filter.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="filter.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/filter.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="576">
-                  <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../fietsschurrekeCP/index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="48">
-                  <caret line="2" selection-start-line="2" selection-end-line="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TemplateRenderer.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Classes/Services/TemplateRenderer.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="585">
-                  <caret line="106" selection-start-line="106" selection-end-line="106" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bikeInfo.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/css/bikeInfo.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-72">
-                  <caret line="93" selection-start-line="93" selection-end-line="93" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/components/kids/index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="48">
-                  <caret line="2" column="6" lean-forward="true" selection-end-line="2" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/components/men/index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="48">
-                  <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/components/woman/index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="23" selection-start-column="12" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="filter.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/components/shared/filter.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="bike.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/bike.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TemplateRenderer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/Services/TemplateRenderer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1061">
+              <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BikeRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/Entities/BikeRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="76" column="51" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -230,19 +151,19 @@
         <option value="$PROJECT_DIR$/components/shared/head.php" />
         <option value="$PROJECT_DIR$/css/filter-modal.css" />
         <option value="$PROJECT_DIR$/components/modals/filter.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cb1362fb-cbbc-4aee-8ccd-e782ca7bfa28/console.sql" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/Classes/Entities/Bike.php" />
-        <option value="$PROJECT_DIR$/Classes/Entities/BikeRepository.php" />
         <option value="$PROJECT_DIR$/components/kids/index.php" />
         <option value="$PROJECT_DIR$/components/shared/filter.php" />
-        <option value="$PROJECT_DIR$/templates/bike.php" />
-        <option value="$PROJECT_DIR$/Classes/Services/TemplateRenderer.php" />
         <option value="$PROJECT_DIR$/js/filter.js" />
         <option value="$PROJECT_DIR$/components/men/index.php" />
         <option value="$PROJECT_DIR$/components/woman/index.php" />
         <option value="$PROJECT_DIR$/components/template.php" />
         <option value="$PROJECT_DIR$/css/bikeInfo.css" />
+        <option value="$PROJECT_DIR$/Classes/Entities/Bike.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cb1362fb-cbbc-4aee-8ccd-e782ca7bfa28/console.sql" />
+        <option value="$PROJECT_DIR$/templates/bike.php" />
+        <option value="$PROJECT_DIR$/Classes/Services/TemplateRenderer.php" />
+        <option value="$PROJECT_DIR$/Classes/Entities/BikeRepository.php" />
       </list>
     </option>
   </component>
@@ -274,6 +195,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,40 +211,19 @@
             <path>
               <item name="fietsschurreke" type="b2602c69:ProjectViewProjectNode" />
               <item name="fietsschurreke" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fietsschurreke" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fietsschurreke" type="462c0819:PsiDirectoryNode" />
+              <item name="Classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fietsschurreke" type="b2602c69:ProjectViewProjectNode" />
               <item name="fietsschurreke" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="kids" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fietsschurreke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fietsschurreke" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="men" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fietsschurreke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fietsschurreke" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="woman" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fietsschurreke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fietsschurreke" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fietsschurreke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fietsschurreke" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fietsschurreke" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fietsschurreke" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fietsschurreke" type="b2602c69:ProjectViewProjectNode" />
@@ -333,13 +234,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../fietsschurrekeCP" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -455,12 +355,13 @@
       <workItem from="1545207438190" duration="8181000" />
       <workItem from="1545248583426" duration="6620000" />
       <workItem from="1545300188764" duration="878000" />
-      <workItem from="1547107884062" duration="18725000" />
+      <workItem from="1547107884062" duration="18783000" />
+      <workItem from="1547128207484" duration="299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83893000" />
+    <option name="totallyTimeSpent" value="84250000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -473,20 +374,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.27559912" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12793177" />
+      <window_info anchor="bottom" id="Database Console" order="8" visible="true" weight="0.27559912" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12899786" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.1380597" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.1380597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.21023965" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21023965" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -724,31 +626,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Entities/BikeRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://cb1362fb-cbbc-4aee-8ccd-e782ca7bfa28/schema/fietsschurreke/table/bikes">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cb1362fb-cbbc-4aee-8ccd-e782ca7bfa28/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Entities/Bike.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2453">
-          <caret line="215" selection-start-line="215" selection-end-line="215" />
         </state>
       </provider>
     </entry>
@@ -770,20 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="86" column="33" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Services/TemplateRenderer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/bike.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -840,6 +707,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-72">
           <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cb1362fb-cbbc-4aee-8ccd-e782ca7bfa28/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Entities/Bike.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="236" selection-start-line="236" selection-end-line="236" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bike.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Services/TemplateRenderer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1061">
+          <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Entities/BikeRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="76" column="51" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
         </state>
       </provider>
     </entry>
