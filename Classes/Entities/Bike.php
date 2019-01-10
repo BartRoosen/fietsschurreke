@@ -50,6 +50,11 @@ class Bike
     private $pictureLink;
 
     /**
+     * @var \DateTime
+     */
+    private $createDate;
+
+    /**
      * @return int
      */
     public function getId()
@@ -191,5 +196,21 @@ class Bike
     public function setPictureLink($pictureLink)
     {
         $this->pictureLink = $pictureLink;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCreateDate()
+    {
+        return $this->createDate;
+    }
+
+    /**
+     * @param \DateTime $createDate
+     */
+    public function setCreateDate($createDate)
+    {
+        $this->createDate = $createDate;
     }
 }

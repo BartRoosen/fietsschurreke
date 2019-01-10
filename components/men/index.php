@@ -1,5 +1,6 @@
+<div class="filter-area">
+    <?php include 'components/shared/filter.php'; ?>
+</div>
 <div class="page-content">
-    <h1>Herenfietsen</h1>
-    <hr>
     <?= $bikeInfo ?>
 </div>

@@ -75,22 +75,49 @@ class TemplateRenderer
      */
     public function renderBikeInfo($page)
     {
+        $referenceDate = new \DateTime();
+        $referenceDate->modify('-1 week');
+
         $this->getBikesByGender($page);
         $this->setTemplateHtml();
 
         foreach ($this->bikes as $bike) {
             if ($bike instanceof Bike) {
-                $sold       = $bike->isSold() ? 'sold-label' : 'no-label';
-                $price      = $bike->getPrice();
+                $bikeInfoSubClass = ' for-sale';
+                $sold             = 'no-label';
+                $price            = '0.00';
+                $sellDate         = \DateTime::createFromFormat('Y-m-d H:i:s', $bike->getSellDate());
+
+                if ($bike->isSold() && $referenceDate > $sellDate) {
+                    continue;
+                }
+
+                if ($bike->isSold()) {
+                    $sold             = 'sold-label';
+                    $bikeInfoSubClass = ' sold';
+                }
+
+                if (!(bool) $bike->isSold()) {
+                    $createDate = \DateTime::createFromFormat('Y-m-d H:i:s', $bike->getCreateDate());
+
+                    if ($referenceDate < $createDate) {
+                        $sold             = 'new-label';
+                        $bikeInfoSubClass = ' new';
+                    }
+
+                    $price = $bike->getPrice();
+                }
+
                 $pictureLink = null === $bike->getPictureLink() ? self::DEFAULT_FOTO : $bike->getPictureLink();
-                $this->html .= sprintf(
+                $this->html  .= sprintf(
                     $this->templateHtml,
+                    $bikeInfoSubClass,
                     $sold,
                     $pictureLink,
                     $bike->getType(),
                     $bike->getSizeFrame(),
                     $bike->getSizeWheel(),
-                    '0.00' === $price ? 'niet bepaald' : sprintf('€ %s', $price)
+                    '0.00' === $price ? '' : sprintf('€ %s', $price)
                 );
             }
         }

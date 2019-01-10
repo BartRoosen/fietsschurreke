@@ -1,6 +1,8 @@
-<div class="bike-info">
-    <div>
-        <div class="%s"></div>
+<div class="bike-info%s">
+    <div class="bike-info-picture-container">
+        <div class="%s">
+            <div class="new-bike">Nieuw!</div>
+        </div>
         <img src="%s" class="bike-info-picture">
     </div>
     <div class="bike-info-table">

@@ -8,8 +8,9 @@ body {
 }
 
 /* @todo: add responsive options !!! */
+
 .page-content {
-    padding : 0 20% 0 20%;
+    width : 100%;
 }
 
 .opening-hours-container,
@@ -92,4 +93,40 @@ body {
     background-size     : cover;
     height              : 300px;
     background-repeat   : no-repeat;
+}
+
+@media screen and (min-width : 769px) {
+    .banner-home,
+    .banner-men,
+    .banner-woman,
+    .banner-kids,
+    .banner-contact,
+    .banner-ebike,
+    .banner-projects {
+        height : 300px;
+    }
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 768px) {
+    .banner-home,
+    .banner-men,
+    .banner-woman,
+    .banner-kids,
+    .banner-contact,
+    .banner-ebike,
+    .banner-projects {
+        height : 250px;
+    }
+}
+
+@media screen and (max-device-width : 480px) {
+    .banner-home,
+    .banner-men,
+    .banner-woman,
+    .banner-kids,
+    .banner-contact,
+    .banner-ebike,
+    .banner-projects {
+        height : 200px;
+    }
 }

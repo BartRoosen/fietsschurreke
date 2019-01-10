@@ -1,34 +1,59 @@
 .bike-info {
-    width                 : 300px;
+    /*width                 : 300px;*/
     float                 : left;
     -webkit-box-shadow    : 0 0 25px -5px #000;
     box-shadow            : 0 0 25px -5px #000;
-    margin                : 1%;
+    margin                : 2em;
     background-color      : #eeeeee;
     -webkit-border-radius : 10px 10px 10px 10px;
     border-radius         : 10px 10px 10px 10px;
     overflow              : hidden;
 }
 
+.bike-info-picture-container {
+    overflow   : hidden;
+    height     : 25em;
+    text-align : center;
+}
+
 .bike-info-picture {
-    width                 : 100%;
-    /*-webkit-border-radius : 10px 10px 0 0;*/
-    /*border-radius         : 10px 10px 0 0;*/
-    height                : 200px;
+    width : 100%;
 }
 
 .bike-info-table {
-    padding : 2%;
+    padding : 1%;
+}
+
+.new-bike {
+    display               : none;
+    position              : absolute;
+    background-color      : #F0FF21;
+    color                 : darkred;
+    padding               : .5em;
+    -moz-transform        : rotate(-25deg);
+    -webkit-transform     : rotate(-25deg);
+    -o-transform          : rotate(-25deg);
+    -ms-transform         : rotate(-25deg);
+    transform             : rotate(-25deg);
+    -webkit-border-radius : 50px;
+    border-radius         : 50px;
+    -webkit-box-shadow    : 0 0 50px 5px #F0FF21;
+    box-shadow            : 0 0 50px 5px #F0FF21;
 }
 
 .sold-label {
     background-color : darkred;
-
 }
 
 .new-label {
-    background-color : darkgreen;
+    /*background-color : darkgreen;*/
+    background-color : rgb(28, 35, 66);
 }
+
+.new-label > div {
+    display : block;
+}
+
 .no-label {
     background-color : rgb(28, 35, 66);
 }
@@ -36,11 +61,13 @@
 .sold-label:before {
     content : 'verkocht'
 }
+
 .new-label:before {
-    content : 'nieuw'
+    content : 'te koop'
 }
+
 .no-label:before {
-    content: 'te koop';
+    content : 'te koop';
 }
 
 .sold-label,
@@ -54,4 +81,42 @@
     width          : 100%;
     text-align     : center;
     font-size      : 1.5em;
+}
+
+.filter-button {
+    font-size : 1.2em;
+    background : rgb(30, 64, 97);
+    color: white;
+    height : 3em;
+}
+
+.filter-button:hover {
+    color      : orangered;
+}
+
+.filter-selected {
+    color            : black !important;
+    /*background-color : rgb(28, 35, 66);*/
+    background-color : white;
+}
+.filter-area {
+    background-color: rgb(30, 64, 97);
+}
+
+@media screen and (min-width : 769px) {
+    .bike-info {
+        width : 300px;
+    }
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 768px) {
+    .bike-info {
+        width : 275px;
+    }
+}
+
+@media screen and (max-device-width : 480px) {
+    .bike-info {
+        width : 320px;
+    }
 }

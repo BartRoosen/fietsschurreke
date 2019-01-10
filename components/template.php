@@ -5,7 +5,7 @@
 <?php include 'shared/banner.php'; ?>
 <?php include 'shared/menu.php'; ?>
 
-<div class="top"></div>
+<!--<div class="top"></div>-->
 <?php include 'components/'. $page .'/index.php'; ?>
 
 <?= $jsHtml; ?>
