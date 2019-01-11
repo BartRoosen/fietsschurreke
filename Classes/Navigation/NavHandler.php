@@ -9,6 +9,7 @@ class NavHandler
     const PATH            = 'components/%s/index.php';
     const DEFAULT_PAGE    = 'home';
     const DEFAULT_PICTURE = 'banner-home';
+    const DEFAULT_BIKE_ID = '';
 
     /**
      *
@@ -35,8 +36,13 @@ class NavHandler
             $session->setPicture(self::DEFAULT_PICTURE);
         }
 
+        if (null === $session->getBikeId()) {
+            $session->setBikeId(self::DEFAULT_BIKE_ID);
+        }
+
         $_SESSION['page']    = $session->getPage();
         $_SESSION['picture'] = $session->getPicture();
+        $_SESSION['bikeId']  = $session->getBikeId();
     }
 
     /**
@@ -50,9 +56,11 @@ class NavHandler
 
         $sessionPage    = isset($_SESSION['page']) ? $_SESSION['page'] : self::DEFAULT_PAGE;
         $sessionPicture = isset($_SESSION['picture']) ? $_SESSION['picture'] : self::DEFAULT_PICTURE;
+        $sessionBikeId  = isset($_SESSION['bikeId']) ? $_SESSION['bikeId'] : self::DEFAULT_BIKE_ID;
 
         $session->setPage($sessionPage);
         $session->setPicture($sessionPicture);
+        $session->setBikeId($sessionBikeId);
 
         return $session;
     }

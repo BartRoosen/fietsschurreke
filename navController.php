@@ -16,6 +16,10 @@ if (isset($_GET, $_GET['picture'])) {
     $session->setPicture($_GET['picture']);
 }
 
+if (isset($_GET, $_GET['id'])) {
+    $session->setBikeId($_GET['id']);
+}
+
 $handler->setSession($session);
 
 header('location: ./');

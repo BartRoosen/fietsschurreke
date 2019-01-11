@@ -8,6 +8,7 @@ class TemplateRenderer
 {
     const TEMPLATE_FOLDER = 'templates';
     const DEFAULT_FOTO    = 'img/bikes/foto.jpg';
+    const NAV_LINK        = 'navController.php?page=details&id=%s';
 
     /**
      * @var string
@@ -68,6 +69,11 @@ class TemplateRenderer
         }
     }
 
+    private function createNavLink($id)
+    {
+        return sprintf(self::NAV_LINK, $id);
+    }
+
     /**
      * @param $page
      *
@@ -113,6 +119,7 @@ class TemplateRenderer
                     $this->templateHtml,
                     $bikeInfoSubClass,
                     $sold,
+                    $this->createNavLink($bike->getId()),
                     $pictureLink,
                     $bike->getBrandName(),
                     $bike->getType(),

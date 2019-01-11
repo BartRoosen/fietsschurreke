@@ -15,6 +15,11 @@ class Session
     private $picture = null;
 
     /**
+     * @var int
+     */
+    private $bikeId;
+
+    /**
      * @return string
      */
     public function getPicture()
@@ -44,5 +49,21 @@ class Session
     public function setPage($page)
     {
         $this->page = $page;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBikeId()
+    {
+        return $this->bikeId;
+    }
+
+    /**
+     * @param int $bikeId
+     */
+    public function setBikeId($bikeId)
+    {
+        $this->bikeId = $bikeId;
     }
 }

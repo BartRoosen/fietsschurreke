@@ -3,7 +3,9 @@
         <div class="%s">
             <div class="new-bike">Nieuw!</div>
         </div>
-        <img src="%s" class="bike-info-picture">
+        <a href="%s">
+            <img src="%s" class="bike-info-picture">
+        </a>
     </div>
     <div class="bike-info-table">
         <table class="table">
