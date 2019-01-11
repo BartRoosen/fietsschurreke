@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99e4b2fd-64c2-4658-9837-f694769515ad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/contact/contact.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/contact/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/contact/open.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ebikes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/ebikes/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/projects/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/banner/contact.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/banner/projects.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bikes/foto.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bikes/foto.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="99e4b2fd-64c2-4658-9837-f694769515ad" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,8 +78,8 @@
       <file leaf-file-name="carousel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/ebikes/carousel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+            <state relative-caret-position="336">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -385,12 +370,12 @@
       <workItem from="1545300188764" duration="878000" />
       <workItem from="1547107884062" duration="18783000" />
       <workItem from="1547128207484" duration="1332000" />
-      <workItem from="1547148942261" duration="14267000" />
+      <workItem from="1547148942261" duration="14652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99550000" />
+    <option name="totallyTimeSpent" value="99935000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,7 +388,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
@@ -416,7 +400,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.21023965" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21023965" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -805,8 +789,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/ebikes/carousel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        <state relative-caret-position="336">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
