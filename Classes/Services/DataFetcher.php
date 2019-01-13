@@ -29,20 +29,20 @@ class DataFetcher
      */
     public function getBikesByGender($page)
     {
-        $gender = null;
+        $filter = null;
 
         switch ($page) {
             case 'men':
-                $gender = Gender::MEN;
+                $filter = ['gender' => Gender::MEN];
                 break;
             case 'woman':
-                $gender = Gender::WOMAN;
+                $filter = ['gender' => Gender::WOMAN];
                 break;
             case 'kids':
-                $gender = Gender::KIDS;
+                $filter = ['gender' => Gender::KIDS];
                 break;
         }
 
-        return $this->bikeRepo->getBikes($gender);
+        return $this->bikeRepo->getBikes($filter);
     }
 }

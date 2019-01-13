@@ -44,16 +44,18 @@ class AbstractRepository
     }
 
     /**
-     * @param $sql
+     * @param      $sql
+     *
+     * @param null $binds
      *
      * @return array
      */
-    public function fetchAll($sql)
+    public function fetchAll($sql, $binds = null)
     {
         $this->sql = $sql;
         $this->connect();
         $stmt = $this->dbh->prepare($this->sql);
-        $stmt->execute();
+        $stmt->execute($binds);
         $this->result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $this->disconnect();
 

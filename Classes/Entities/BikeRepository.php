@@ -9,12 +9,34 @@ namespace Classes\Entities;
  */
 class BikeRepository extends AbstractRepository
 {
+    const FIELDS = [
+        'gender' => 'B.AI_GENDER',
+        'id'     => 'B.AI_BIKE',
+    ];
+
+    /**
+     * @var array
+     */
+    private $filter;
+
+    /**
+     * @var string
+     */
+    private $filterString;
+
+    /**
+     * @var null|array
+     */
+    private $binds = null;
+
     /**
      * @param int|null $gender
      *
+     * @param array|null     $filter
+     *
      * @return array
      */
-    public function getBikes($gender = null)
+    public function getBikes($filter = null)
     {
         $sql = 'SELECT
                   B.AI_BIKE AS bikeId,
@@ -37,20 +59,31 @@ class BikeRepository extends AbstractRepository
                   LEFT JOIN brands BR ON (B.AI_BRAND = BR.AI_BRAND)
                 WHERE B.FL_DELETED = 0 AND B.FL_DISPLAY = 1';
 
-        if ($gender !== null) {
-            $filter = sprintf(' AND B.AI_GENDER = %s', $gender);
-            $sql    .= $filter;
+        if (is_array($filter)) {
+            $this->filter = $filter;
+            $this->buildFilter();
+            $sql .= $this->filterString;
         }
 
         $sql .= ' ORDER BY B.DT_CREATED DESC;';
 
-        $dataRows = $this->fetchAll($sql);
+        $dataRows = $this->fetchAll($sql, $this->binds);
 
         if (empty($dataRows)) {
             return [];
         }
 
         return $this->hydrate($dataRows);
+    }
+
+    private function buildFilter()
+    {
+        foreach ($this->filter as $alias => $value) {
+            if (array_key_exists($alias, self::FIELDS)) {
+                $this->filterString .= sprintf(' AND %s = :%s', self::FIELDS[$alias], $alias);
+                $this->binds[$alias] = $value;
+            }
+        }
     }
 
     /**
