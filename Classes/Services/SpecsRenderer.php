@@ -45,6 +45,12 @@ class SpecsRenderer
 
         foreach ($bikeArray as $bike) {
             if ($bike instanceof Bike) {
+                $price = 'Onbekend';
+
+                if('0.00' !== $bike->getPrice()) {
+                    $price = '€ ' . $bike->getPrice();
+                }
+
                 return sprintf(
                     $this->specsHtml,
                     true === (bool) $bike->isSold() ? 'danger' : 'info',
@@ -53,7 +59,7 @@ class SpecsRenderer
                     $bike->getType(),
                     $bike->getSizeFrame(),
                     $bike->getSizeWheel(),
-                    true === (bool) $bike->isSold() ? '' : '€ ' . $bike->getPrice()
+                    true === (bool) $bike->isSold() ? '' : $price
                 );
             }
         }
