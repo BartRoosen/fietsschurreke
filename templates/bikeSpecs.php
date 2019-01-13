@@ -1,6 +1,10 @@
 <h2>Specificaties</h2><hr>
-<div class="alert alert-info">
+<div class="alert alert-%s">
     <table class="table table-bordered">
+        <tr>
+            <td><strong>Status</strong></td>
+            <td>%s</td>
+        </tr>
         <tr>
             <td><strong>Merk</strong></td>
             <td>%s</td>

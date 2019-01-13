@@ -47,11 +47,13 @@ class SpecsRenderer
             if ($bike instanceof Bike) {
                 return sprintf(
                     $this->specsHtml,
+                    true === (bool) $bike->isSold() ? 'danger' : 'info',
+                    true === (bool) $bike->isSold() ? 'Verkocht' : 'Te koop',
                     $bike->getBrandName(),
                     $bike->getType(),
                     $bike->getSizeFrame(),
                     $bike->getSizeWheel(),
-                    $bike->getPrice()
+                    true === (bool) $bike->isSold() ? '' : '€ ' . $bike->getPrice()
                 );
             }
         }

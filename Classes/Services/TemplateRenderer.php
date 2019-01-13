@@ -6,9 +6,10 @@ use Classes\Entities\Bike;
 
 class TemplateRenderer
 {
-    const TEMPLATE_FOLDER = 'templates';
-    const DEFAULT_FOTO    = 'img/bikes/foto.jpg';
-    const NAV_LINK        = 'navController.php?page=details&id=%s';
+    const TEMPLATE_FOLDER  = 'templates';
+    const DEFAULT_FOTO     = 'img/bikes/foto.jpg';
+    const NAV_LINK         = 'navController.php?page=details&id=%s';
+    const COVER_PHOTO_PATH = 'img/bikes/%s/1.jpg';
 
     /**
      * @var string
@@ -114,8 +115,15 @@ class TemplateRenderer
                     $price = $bike->getPrice();
                 }
 
-                $pictureLink = null === $bike->getPictureLink() ? self::DEFAULT_FOTO : $bike->getPictureLink();
-                $this->html  .= sprintf(
+                $coverPhotoPath = sprintf(self::COVER_PHOTO_PATH, $bike->getId());
+
+                $pictureLink = file_exists($coverPhotoPath) ? $coverPhotoPath : self::DEFAULT_FOTO;
+
+                if (file_exists($coverPhotoPath)) {
+                    $pictureLink = $coverPhotoPath;
+                }
+
+                $this->html .= sprintf(
                     $this->templateHtml,
                     $bikeInfoSubClass,
                     $sold,
