@@ -121,3 +121,7 @@
         width : 320px;
     }
 }
+
+.no-bikes-available {
+    padding : 1em;
+}

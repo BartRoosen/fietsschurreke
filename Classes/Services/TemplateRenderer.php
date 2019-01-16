@@ -11,6 +11,8 @@ class TemplateRenderer
     const NAV_LINK         = 'navController.php?page=details&id=%s';
     const COVER_PHOTO_PATH = 'img/bikes/%s/1.jpg';
 
+    const NO_BIKES_AVAILABLE = '<h2 class="no-bikes-available">Momenteel geen %sfietsen beschikbaar</h2>';
+
     /**
      * @var string
      */
@@ -87,6 +89,23 @@ class TemplateRenderer
 
         $this->getBikesByGender($page);
         $this->setTemplateHtml();
+
+        if (empty($this->bikes)) {
+            $title = '';
+            switch ($page) {
+                case 'men':
+                    $title = 'heren';
+                    break;
+                case 'woman':
+                    $title = 'dames';
+                    break;
+                case 'kids':
+                    $title = 'kinder';
+                    break;
+            }
+
+            return sprintf(self::NO_BIKES_AVAILABLE, $title);
+        }
 
         foreach ($this->bikes as $bike) {
             if ($bike instanceof Bike) {
