@@ -1,7 +1,7 @@
 <div class="bike-info%s">
     <div class="bike-info-picture-container">
         <div class="%s">
-            <div class="new-bike">Nieuw!</div>
+            <div class="new-bike">Deze week<br>toegevoegd</div>
         </div>
         <a href="%s">
             <img src="%s" class="bike-info-picture">

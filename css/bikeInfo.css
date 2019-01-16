@@ -25,6 +25,7 @@
 }
 
 .new-bike {
+    font-size : 0.8em;
     display               : none;
     position              : absolute;
     background-color      : #F0FF21;
