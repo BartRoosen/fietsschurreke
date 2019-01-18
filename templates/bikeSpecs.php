@@ -26,4 +26,7 @@
             <td>%s</td>
         </tr>
     </table>
+    <hr><h4>Extra informatie</h4>
+    <div class="extra-info">%s</div>
+    <hr>
 </div>

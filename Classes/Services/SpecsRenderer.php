@@ -59,7 +59,8 @@ class SpecsRenderer
                     $bike->getType(),
                     $bike->getSizeFrame(),
                     $bike->getSizeWheel(),
-                    true === (bool) $bike->isSold() ? '' : $price
+                    true === (bool) $bike->isSold() ? '' : $price,
+                    '' === $bike->getInfo() ? 'Geen extra informatie beschikbaar' : $bike->getInfo()
                 );
             }
         }

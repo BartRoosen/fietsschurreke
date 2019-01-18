@@ -49,7 +49,8 @@ class BikeRepository extends AbstractRepository
                   SW.CD_SIZE_WHEEL AS wheelSize,
                   P.UL_PICTURE AS pictureLink,
                   B.DT_CREATED AS createDate,
-                  BR.NM_BRAND AS brandName
+                  BR.NM_BRAND AS brandName,
+                  EI.CD_INFO AS info
                 FROM bikes B
                   LEFT JOIN bike_gender BG ON (B.AI_GENDER = BG.AI_GENDER)
                   LEFT JOIN bike_types BT ON (B.AI_TYPE = BT.AI_TYPE)
@@ -57,6 +58,7 @@ class BikeRepository extends AbstractRepository
                   LEFT JOIN size_wheel SW ON (B.AI_SIZE_WHEEL = SW.AI_SIZE_WHEEL)
                   LEFT JOIN pictures P ON (B.AI_BIKE = P.AI_BIKE AND P.FL_COVER = 1)
                   LEFT JOIN brands BR ON (B.AI_BRAND = BR.AI_BRAND)
+                  LEFT JOIN extra_info EI ON (EI.AI_BIKE = B.AI_BIKE AND EI.FL_DELETED = 0)
                 WHERE B.FL_DELETED = 0 AND B.FL_DISPLAY = 1';
 
         if (is_array($filter)) {
@@ -108,6 +110,7 @@ class BikeRepository extends AbstractRepository
             $bike->setPictureLink($row['pictureLink']);
             $bike->setCreateDate($row['createDate']);
             $bike->setBrandName($row['brandName']);
+            $bike->setInfo($row['info']);
 
             $bikes[$id] = $bike;
         }

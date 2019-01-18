@@ -60,6 +60,11 @@ class Bike
     private $brandName;
 
     /**
+     * @var string
+     */
+    private $info;
+
+    /**
      * @return int
      */
     public function getId()
@@ -233,5 +238,22 @@ class Bike
     public function setBrandName($brandName)
     {
         $this->brandName = $brandName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInfo()
+    {
+        return $this->info;
+    }
+
+    /**
+     * @param string $info
+     */
+    public function setInfo($info)
+    {
+        $infoArray  = explode("\n", $info);
+        $this->info = implode('<br>', $infoArray);
     }
 }

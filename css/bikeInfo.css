@@ -125,3 +125,7 @@
 .no-bikes-available {
     padding : 1em;
 }
+
+.extra-info {
+    padding: 0 0 0 2em;
+}
